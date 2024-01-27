@@ -3,13 +3,20 @@ import { motion } from "framer-motion";
 const InitialFarmerMotion = () => {
   const parentRef = useRef(null);
   const parent = {
-    hidden: { opacity: 0, scale: 0.9 },
+    hidden: { x: 0, y: 0, opacity: 0 },
     visible: {
+      x: [0, 300, -300, 0],
+      y: [0, 300, -300, 0],
+      rotate: [0, 300, -300, 0],
+
       opacity: 1,
-      scale: 1,
       transition: {
-        ease: "easeInOut",
-        duration: 0.5,
+        ease: "linear",
+        duration: 5,
+        repeat: Infinity,
+        opacity: {
+          duration: 0.2,
+        },
       },
     },
     hover: { scale: 1.1 },
@@ -33,15 +40,6 @@ const InitialFarmerMotion = () => {
         variants={parent}
         initial="hidden"
         animate="visible"
-        whileHover="hover"
-        whileTap="tab"
-        drag
-        dragConstraints={parentRef}
-        dragElastic={0.7}
-        whileDrag={{
-          scale: 1.1,
-          boxShadow: "0px 10px 10px #000",
-        }}
         className="size-56 bg-indigo-300 rounded-lg flex justify-center items-center flex-wrap  gap-2 px-4 pt-0 "></motion.div>
     </div>
   );
