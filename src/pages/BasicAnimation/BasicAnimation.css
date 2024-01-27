@@ -1,0 +1,107 @@
+.main {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.container {
+  font-size: 5rem;
+  font-weight: 700;
+}
+.alphabet {
+  color: rgb(0, 0, 0);
+  transition: all ease-in-out;
+  transition-duration: 50ms;
+}
+
+.container:hover .alphabet {
+  color: rgb(235, 136, 152);
+}
+/* 
+.card {
+  background-color: tomato;
+  width: 500px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  clip-path: circle(19.8% at 108% -2%);
+  transition: all ease-in-out 500ms;
+}
+
+.card:hover {
+  clip-path: circle(82.6% at 54% 54%);
+} */
+
+/* 
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.loading div {
+  position: absolute;
+}
+.glass {
+  background-color: rgba(255, 255, 255, 0.219);
+  padding: 150px;
+  width: 150px;
+  border-radius: 50%;
+  z-index: 3;
+  backdrop-filter: blur(10px);
+}
+.box {
+  background-color: tomato;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  transform: translate(-250px);
+  animation: rotation 3s ease-in infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-250px);
+    z-index: 1;
+  }
+  50% {
+    transform: translate(250px) rotate(180deg);
+  }
+  100% {
+    transform: translate(-250px) rotate(360deg);
+    z-index: 6;
+  }
+} */
+
+/* .btn {
+  background-color: transparent;
+  border: 1px solid tomato;
+  padding: 4px;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in;
+  transform-origin: left top;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  top: 0;
+  right: 0;
+  transform: scaleY(0);
+  z-index: -1;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+}
+
+.btn:hover::after {
+  transform: scaleY(1);
+  background-color: tomato;
+}
+.btn:hover {
+  color: white;
+} */
