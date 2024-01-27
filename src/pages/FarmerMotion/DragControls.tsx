@@ -1,5 +1,4 @@
 import { useDragControls } from "framer-motion";
-import React from "react";
 import { motion } from "framer-motion";
 const DragControls = () => {
   const controls = useDragControls();
